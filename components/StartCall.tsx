@@ -3,37 +3,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { Phone } from "lucide-react";
 
-const config: PostedConfig = {
-    name: "EVI 2 config",
-    prompt: {
-        id: "e2c38ac3-e8bc-4a6f-818d-d86e6d924a91",
-        version: 0
-    },
-    eviVersion: "2",
-    voice: {
-        provider: "HUME_AI",
-        name: "ANNA"
-    },
-    languageModel: {
-        modelProvider: Hume.empathicVoice.PostedLanguageModelModelProvider.Anthropic,
-        modelResource: "claude-3-5-sonnet-20240620",
-        temperature: 1
-    },
-    eventMessages: {
-        onNewChat: {
-            enabled: false,
-            text: ""
-        },
-        onInactivityTimeout: {
-            enabled: false,
-            text: ""
-        },
-        onMaxDurationTimeout: {
-            enabled: false,
-            text: ""
-        }
-    }
-};
 
 export default function StartCall() {
     const { status, connect } = useVoice({ config_id: "e2c38ac3-e8bc-4a6f-818d-d86e6d924a91" });
