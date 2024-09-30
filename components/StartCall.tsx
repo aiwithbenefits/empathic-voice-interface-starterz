@@ -2,7 +2,6 @@ import { useVoice } from "@humeai/voice-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { Phone } from "lucide-react";
-import * as Hume from "../../../../../../index";
 
 const config: PostedConfig = {
     name: "EVI 2 config",
