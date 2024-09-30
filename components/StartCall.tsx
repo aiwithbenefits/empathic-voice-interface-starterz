@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 import { Phone } from "lucide-react";
 
 export default function StartCall() {
-  const { status, connect } = useVoice();
+  const { status, connect } = useVoice(config_id="e2c38ac3-e8bc-4a6f-818d-d86e6d924a91");
 
   return (
     <AnimatePresence>
